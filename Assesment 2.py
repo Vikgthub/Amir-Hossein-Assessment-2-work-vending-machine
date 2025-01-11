@@ -65,7 +65,7 @@ while True: #use a while loop to repeat code until condition breaks the loop to 
 #then minus the cash amount inserted by the item price and display a message of item purchased and the amount left to be returned to the customer 
     if cashamount >= item_price:
         cashamount -= item_price
-        print(f"You purchased {item_name}. Remaining balance: ${cashamount}.")
+        print(f"You purchased {item_name}. Remaining balance: €{cashamount}.")
     else: # if the amount inserted less than item's price, program displays an error message and gives the item's 
           # actual price and tells the customer the amount that was inserted into the vending machine (which is not enough to purchase the item)
         print(f"Insufficient funds. {item_name} costs ${item_price}, but you only have €{cashamount}.")
