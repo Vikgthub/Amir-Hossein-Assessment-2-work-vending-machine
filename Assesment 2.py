@@ -61,11 +61,13 @@ while True: #use a while loop to repeat code until condition breaks the loop to 
     item_price = selected_item["price"]
     item_name = selected_item["name"]
 
-#if the cash amount is greater than or same as price of the item (eough to purchase the item) then minus the cash amount inserted by the item price and display a message of item purchased and the amount left to be returned to the customer 
+#if the cash amount is greater than or same as price of the item (eough to purchase the item) 
+#then minus the cash amount inserted by the item price and display a message of item purchased and the amount left to be returned to the customer 
     if cashamount >= item_price:
         cashamount -= item_price
         print(f"You purchased {item_name}. Remaining balance: ${cashamount}.")
-    else: # if the amount inserted less than item's price, program displays an error message and gives the item's actual price and tells the customer the amount that was inserted into the vending machine (which is not enough to purchase the item)
+    else: # if the amount inserted less than item's price, program displays an error message and gives the item's 
+          # actual price and tells the customer the amount that was inserted into the vending machine (which is not enough to purchase the item)
         print(f"Insufficient funds. {item_name} costs ${item_price}, but you only have €{cashamount}.")
         break #break from the loop if condition not met
 
